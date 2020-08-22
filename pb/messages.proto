@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+message Error {
+    message Entry {
+        string key = 1;
+        string value = 2;
+    }
+    string code = 1;
+    string message = 2;
+    repeated Entry data = 3;
+}
+
+message ErrorResponse {
+    Error error = 1;
+}
