@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/severgroup-tt/gopkg-errors"
-	"github.com/severgroup-tt/gopkg-logger"
+	"github.com/sanches1984/gopkg-errors"
+	"github.com/sanches1984/gopkg-logger"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"google.golang.org/grpc"

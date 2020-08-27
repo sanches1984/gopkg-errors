@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/severgroup-tt/gopkg-errors"
+	"github.com/sanches1984/gopkg-errors"
 
 	"github.com/go-openapi/runtime"
 )

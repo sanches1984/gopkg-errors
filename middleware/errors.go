@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/severgroup-tt/gopkg-errors"
-	"github.com/severgroup-tt/gopkg-errors/transport"
+	"github.com/sanches1984/gopkg-errors"
+	"github.com/sanches1984/gopkg-errors/transport"
 
 	"github.com/golang/protobuf/proto"
 )

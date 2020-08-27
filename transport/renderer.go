@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/severgroup-tt/gopkg-errors"
-	"github.com/severgroup-tt/gopkg-errors/pb"
+	"github.com/sanches1984/gopkg-errors"
+	"github.com/sanches1984/gopkg-errors/pb"
 )
 
 const msgInternal = "Internal error"

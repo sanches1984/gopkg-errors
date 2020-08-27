@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/severgroup-tt/gopkg-errors"
+	"github.com/sanches1984/gopkg-errors"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
