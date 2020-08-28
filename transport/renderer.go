@@ -12,8 +12,9 @@ import (
 const msgInternal = "Internal error"
 
 // ErrorRenderer ...
-func ErrorRenderer(ctx context.Context, _ *http.Request, w http.ResponseWriter, err error) {
+func ErrorRenderer(ctx context.Context, w http.ResponseWriter, err error) {
 	w.Header().Set("Content-MimeType", "application/json")
+	w.Header().Set("Content-Type", "application/json")
 
 	var pkgErr *errors.Error
 	if typed, ok := errors.Unwrap(err); ok {
