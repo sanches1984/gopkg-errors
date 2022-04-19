@@ -2,10 +2,7 @@ package middleware
 
 import (
 	"context"
-	"fmt"
-
 	"github.com/sanches1984/gopkg-errors"
-	"github.com/sanches1984/gopkg-logger"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"google.golang.org/grpc"
@@ -17,7 +14,6 @@ func NewConvertErrorsServerInterceptor(converters []errors.ErrorConverter, count
 		resp, err = handler(ctx, req)
 		if err != nil {
 			appErr := (*errWithDetails)(errors.Convert(ctx, err, converters...))
-			logger.Error(ctx, fmt.Sprintf("error: %+v\n", appErr.Unwrap()))
 			if counter != nil && appErr.Unwrap().IsTyped(errors.Internal) {
 				(*counter).Inc()
 			}
